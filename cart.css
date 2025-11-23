@@ -50,6 +50,6 @@
 }
 
 .list-foot tr:first-child td:last-child {
-    background: url("thank-flowers.png") center center border-box no-repeat;
+    background: url("./thank-you.png") center center border-box no-repeat;
     background-size: 65%;
 }
