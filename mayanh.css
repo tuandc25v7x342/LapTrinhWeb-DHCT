@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family : sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper .page-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 20vh;
+    max-width: 100%;
+    background-image: url("images/banner-header.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 3rem;
+    color: #7e7e66;
+    text-shadow: 3px 5px 7px #5c0909;  
+}
+
+.wrapper .page-header .shopping-cart{
+    cursor: pointer;
+
+    
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.wrapper .page-header .shopping-cart .no-orrders-item{
+    position: absolute;
+    top: -7px;
+    right: -12px;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 3px;
+    border: 1px solid #22bb33;
+}
+
+.wrapper .page-header .shopping-cart .icon-cart{
+    font-size: 2.5rem;
+    color: #22bb33;
+}
+
+.wrapper .page-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.wrapper .page-main .item .item-image{
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+    height: 65%;
+    object-fit: contain
+    }
+}
+
+.wrapper .page-main .item .item-info .item-title{
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.wrapper .page-main .item .item-info .item-price{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: red;
+}
+
+.wrapper .page-main .item .item-info .add-cart{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    font-size: 0.7rem;
+    background: #00b000;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.wrapper .page-main .item .add-cart:hover{
+    background: #00b0aa;
+}
+
+.wrapper .page-footer{
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 40px 90px;
+    color: #181817;
+    background: url("images/banner-footer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+}
+
+.container{
+    margin: 10px auto;
+    width: 90%;
+}
+
+.list-item{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.list-head th{
+    background-color: #22bb33;
+    border: 1px solid black;
+    padding: 10px 3px;
+}
