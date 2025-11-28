@@ -24,6 +24,13 @@
   font-size: 1.5rem;
   color: #7e7e66;
   text-shadow: 3px 5px 7px #5c0909;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .wrapper .page-header h1 {
   margin-left: 30px;

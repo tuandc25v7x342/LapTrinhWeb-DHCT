@@ -53,7 +53,7 @@ const selectedItem = (evt) => {
 
 //--- Utility and action functions (kept global so they can be used from HTML) ---
 function addEventToAllCartButtons() {
-  // được gọi từ product-list.html
+  
   const add2CartLinks = document.getElementsByClassName('add-cart');
   const arrCartLinks = Array.from(add2CartLinks); // Array.isArray(arrCartLinks) -> true
 
@@ -69,7 +69,8 @@ function addEventToAllCartButtons() {
   if (shoppingCart) {
     shoppingCart.addEventListener('click', function () {
       // click vào giỏ hàng để xem
-      location.href = 'showcart.html';
+      // location.href = 'showcart.html';
+      window.open('showcart.html', '_blank');
     });
   }
 
@@ -90,7 +91,7 @@ function showCart() {
   // được gọi từ showcart.html
   if (localStorage.cartItems == undefined) {
     alert('Your cart is empty. Please go back homepage to shopping.');
-    location.href = 'product-list.html'; //redirect the browser to the product-list.html
+    location.href = 'mayanh.html';
   } else {
     let customerCart = JSON.parse(localStorage.getItem('cartItems'));
     const tblHead = document.getElementsByTagName('thead')[0];
